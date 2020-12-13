@@ -102,4 +102,90 @@ button {
     color: #eee;
     cursor: pointer;
   }
+  .about {
+    height: 100vh;
+    width: 100%;
+  }
+  .about .subtitle {
+    height: 3rem;
+    width: 100%;
+    margin: 30px 0 3px;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .about .about-bar {
+    height: 1.9px;
+    width: 6rem;
+    background-color: black;
+    margin: 0 auto;
+  }
+  .about .about-main {
+    text-align: center;
+  }
+  .about .about-main .frame {
+    text-align: center;
+  }
+  .about .about-main .frame img {
+    border-radius: 10px;
+    margin-top: 27px;
+  }
+  .about .about-main .selfIntroduction {
+    margin-top: 50px;
+  }
+  .about .about-main .selfIntroduction h3 {
+    font-size: 1.2rem;
+  }
+  .about .about-main .selfIntroduction .text {
+    margin-top: 20px;
+  }
+  .about .my-sns {
+    margin-top: 80px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .about .my-sns .sns {
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+  }
+  .about .my-sns .sns a {
+    color: #393e46;
+  }
+  .about .my-sns .sns::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to left, #b52b65, #eb6663);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(100%, 100%);
+    transition: all 0.4s;
+  }
+  .about .my-sns .sns:hover::before {
+    transform: translate(0);
+    animation: anime 0.4s linear;
+  }
+}
+
+@keyframes anime {
+  0%,
+  100% {
+    height: 100%;
+    width: 100%;
+  }
+  50% {
+    height: 50%;
+    width: 50%;
+  }
 }

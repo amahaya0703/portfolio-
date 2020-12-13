@@ -112,4 +112,91 @@ button {
       }
     }
   }
+  // about画面について
+  .about {
+    height: 100vh;
+    width: 100%;
+    .subtitle {
+      height: 3rem;
+      width: 100%;
+      margin: 30px 0 3px;
+      text-align: center;
+      font-size: 2rem;
+    }
+    .about-bar {
+      height: 1.9px;
+      width: 6rem;
+      background-color: black;
+      margin: 0 auto;
+    }
+    .about-main {
+      text-align: center;
+      .frame {
+        text-align: center;
+        img {
+          border-radius: 10px;
+          margin-top: 27px;
+        }
+      }
+      .selfIntroduction {
+        margin-top: 50px;
+        h3 {
+          font-size: 1.2rem;
+        }
+        .text {
+          margin-top: 20px;
+        }
+      }
+    }
+    .my-sns {
+      margin-top: 80px;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .sns {
+        margin: 0 10px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        a {
+          color: #393e46;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: linear-gradient(to left, #b52b65, #eb6663);
+          height: 100%;
+          width: 100%;
+          z-index: -1;
+          border-radius: 50%;
+          transform: translate(100%, 100%);
+          transition: all 0.4s;
+        }
+        &:hover::before {
+          transform: translate(0);
+          animation: anime 0.4s linear;
+        }
+      }
+    }
+  }
+}
+
+@keyframes anime {
+  0%,
+  100% {
+    height: 100%;
+    width: 100%;
+  }
+  50% {
+    height: 50%;
+    width: 50%;
+  }
 }

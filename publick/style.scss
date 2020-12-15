@@ -19,7 +19,7 @@ button {
   body {
     width: 100%;
   }
-  // ヘッダー部分
+  // ヘッダー部分 //
   header {
     width: 100%;
     box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
@@ -72,7 +72,7 @@ button {
       }
     }
   }
-  // ホーム画面部分
+  // ホーム画面部分 //
   .main {
     .header {
       min-height: 100vh;
@@ -112,22 +112,25 @@ button {
       }
     }
   }
-  // about画面について
+  // about画面について //
   .about {
     height: 100vh;
     width: 100%;
-    .subtitle {
-      height: 3rem;
-      width: 100%;
-      margin: 30px 0 3px;
-      text-align: center;
-      font-size: 2rem;
-    }
-    .about-bar {
-      height: 1.9px;
-      width: 6rem;
-      background-color: black;
-      margin: 0 auto;
+    box-shadow: 0.1px 4px rgba(146, 161, 176, 0.15);
+    &__box {
+      &__subtitle {
+        height: 3rem;
+        width: 100%;
+        margin: 30px 0 3px;
+        text-align: center;
+        font-size: 2rem;
+      }
+      &__bar {
+        height: 1.9px;
+        width: 6rem;
+        background-color: black;
+        margin: 0 auto;
+      }
     }
     .about-main {
       text-align: center;
@@ -144,7 +147,8 @@ button {
           font-size: 1.2rem;
         }
         .text {
-          margin-top: 20px;
+          text-align: justify;
+          margin: 20px 30px 0 30px;
         }
       }
     }
@@ -187,8 +191,163 @@ button {
       }
     }
   }
+  // skills画面について //
+  .skills {
+    width: 100%;
+    &__box {
+      margin-bottom: 3rem;
+      &__subtitle {
+        margin: 30px 0 3px;
+        height: 3rem;
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+      }
+      &__bar {
+        height: 1.9px;
+        width: 6rem;
+        background-color: black;
+        margin: 0 auto;
+      }
+    }
+    &__top {
+      height: 426px;
+      width: 349px;
+      margin: 0 auto;
+      text-align: center;
+      .html {
+        background-color: #f1f0f5;
+        border: 1px solid #353941;
+        height: 115px;
+        width: 363px;
+        padding: 2rem;
+        &__logo {
+        }
+        &__name {
+          font-weight: 600;
+        }
+      }
+      .css {
+        background-color: #f1f0f5;
+        border: 1px solid #353941;
+        height: 115px;
+        width: 363px;
+        padding: 2rem;
+        margin-top: 1.5rem;
+        &__logo {
+        }
+        &__name {
+          font-weight: 600;
+        }
+      }
+      .js {
+        background-color: #f1f0f5;
+        border: 1px solid #353941;
+        height: 115px;
+        width: 363px;
+        padding: 2rem;
+        margin-top: 1.5rem;
+        &__logo {
+        }
+        &__name {
+          font-weight: 600;
+        }
+      }
+    }
+    &__center {
+      height: 426px;
+      width: 349px;
+      margin: 0 auto;
+      text-align: center;
+      .sass {
+        background-color: #f1f0f5;
+        border: 1px solid #353941;
+        height: 115px;
+        width: 363px;
+        padding: 2rem;
+        margin-top: 1.5rem;
+        &__logo {
+        }
+        &__name {
+          font-weight: 600;
+        }
+      }
+      .vue {
+        background-color: #f1f0f5;
+        border: 1px solid #353941;
+        height: 115px;
+        width: 363px;
+        padding: 2rem;
+        margin-top: 1.5rem;
+        &__logo {
+        }
+        &__name {
+          font-weight: 600;
+        }
+      }
+      .bootstrap {
+        background-color: #f1f0f5;
+        border: 1px solid #353941;
+        height: 115px;
+        width: 363px;
+        padding: 2rem;
+        margin-top: 1.5rem;
+        &__logo {
+        }
+        &__name {
+          font-weight: 600;
+        }
+      }
+    }
+    &__end {
+      height: 426px;
+      width: 349px;
+      margin: 0 auto;
+      text-align: center;
+      .php {
+        background-color: #f1f0f5;
+        border: 1px solid #353941;
+        height: 115px;
+        width: 363px;
+        padding: 2rem;
+        margin-top: 1.5rem;
+        &__logo {
+        }
+        &__name {
+          font-weight: 600;
+        }
+      }
+      .android {
+        background-color: #f1f0f5;
+        border: 1px solid #353941;
+        height: 115px;
+        width: 363px;
+        padding: 2rem;
+        margin-top: 1.5rem;
+        &__logo {
+        }
+        &__name {
+          font-weight: 600;
+        }
+      }
+      .aws {
+        background-color: #f1f0f5;
+        border: 1px solid #353941;
+        height: 115px;
+        width: 363px;
+        padding: 2rem;
+        margin-top: 1.5rem;
+        &__logo {
+        }
+        &__name {
+          font-weight: 600;
+        }
+      }
+    }
+  }
 }
 
+//about画面のアニメーション
 @keyframes anime {
   0%,
   100% {

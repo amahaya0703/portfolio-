@@ -19,7 +19,7 @@ button {
   body {
     width: 100%;
   }
-  // ヘッダー部分
+  // ヘッダー部分 //
   header {
     width: 100%;
     box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
@@ -72,8 +72,9 @@ button {
       }
     }
   }
-  // ホーム画面部分
+  // ホーム画面部分 //
   .main {
+    box-shadow: 5px 5px 5px 5px rgba(0.5, 0, 0, 0.5);
     .header {
       min-height: 100vh;
       width: 100%;
@@ -112,22 +113,25 @@ button {
       }
     }
   }
-  // about画面について
+  // about画面について //
   .about {
     height: 100vh;
     width: 100%;
-    .subtitle {
-      height: 3rem;
-      width: 100%;
-      margin: 30px 0 3px;
-      text-align: center;
-      font-size: 2rem;
-    }
-    .about-bar {
-      height: 1.9px;
-      width: 6rem;
-      background-color: black;
-      margin: 0 auto;
+    box-shadow: 24px 14px 13px rgba(0, 0, 0, 0.5);
+    &__box {
+      &__subtitle {
+        height: 3rem;
+        width: 100%;
+        margin: 30px 0 3px;
+        text-align: center;
+        font-size: 2rem;
+      }
+      &__bar {
+        height: 1.9px;
+        width: 6rem;
+        background-color: black;
+        margin: 0 auto;
+      }
     }
     .about-main {
       text-align: center;
@@ -144,7 +148,8 @@ button {
           font-size: 1.2rem;
         }
         .text {
-          margin-top: 20px;
+          text-align: justify;
+          margin: 20px 30px 0 30px;
         }
       }
     }
@@ -187,8 +192,240 @@ button {
       }
     }
   }
+  // skills画面について //
+  .skills {
+    width: 100%;
+    padding-bottom: 30px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    &__box {
+      margin-bottom: 3rem;
+      &__subtitle {
+        margin: 30px 0 3px;
+        height: 3rem;
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+      }
+      &__bar {
+        height: 1.9px;
+        width: 6rem;
+        background-color: black;
+        margin: 0 auto;
+      }
+    }
+    &__top {
+      height: 393px;
+      width: 349px;
+      margin: 0 auto;
+      text-align: center;
+      .html {
+        background-color: #f1f0f5;
+        border: 1px solid #353941;
+        height: 115px;
+        width: 349px;
+        padding: 2rem;
+        &__logo {
+        }
+        &__name {
+          font-weight: 600;
+        }
+      }
+      .css {
+        background-color: #f1f0f5;
+        border: 1px solid #353941;
+        height: 115px;
+        width: 349px;
+        padding: 2rem;
+        margin-top: 1.5rem;
+        &__logo {
+        }
+        &__name {
+          font-weight: 600;
+        }
+      }
+      .js {
+        background-color: #f1f0f5;
+        border: 1px solid #353941;
+        height: 115px;
+        width: 349px;
+        padding: 2rem;
+        margin-top: 1.5rem;
+        &__logo {
+        }
+        &__name {
+          font-weight: 600;
+        }
+      }
+    }
+    &__center {
+      height: 393px;
+      width: 349px;
+      margin: 0 auto;
+      text-align: center;
+      .sass {
+        background-color: #f1f0f5;
+        border: 1px solid #353941;
+        height: 115px;
+        width: 349px;
+        padding: 2rem;
+        margin-top: 1.5rem;
+        &__logo {
+        }
+        &__name {
+          font-weight: 600;
+        }
+      }
+      .vue {
+        background-color: #f1f0f5;
+        border: 1px solid #353941;
+        height: 115px;
+        width: 349px;
+        padding: 2rem;
+        margin-top: 1.5rem;
+        &__logo {
+        }
+        &__name {
+          font-weight: 600;
+        }
+      }
+      .bootstrap {
+        background-color: #f1f0f5;
+        border: 1px solid #353941;
+        height: 115px;
+        width: 349px;
+        padding: 2rem;
+        margin-top: 1.5rem;
+        &__logo {
+        }
+        &__name {
+          font-weight: 600;
+        }
+      }
+    }
+    &__end {
+      height: 393px;
+      width: 349px;
+      margin: 0 auto;
+      text-align: center;
+      .php {
+        background-color: #f1f0f5;
+        border: 1px solid #353941;
+        height: 115px;
+        width: 349px;
+        padding: 2rem;
+        margin-top: 1.5rem;
+        &__logo {
+        }
+        &__name {
+          font-weight: 600;
+        }
+      }
+      .android {
+        background-color: #f1f0f5;
+        border: 1px solid #353941;
+        height: 115px;
+        width: 349px;
+        padding: 2rem;
+        margin-top: 1.5rem;
+        &__logo {
+        }
+        &__name {
+          font-weight: 600;
+        }
+      }
+      .aws {
+        background-color: #f1f0f5;
+        border: 1px solid #353941;
+        height: 115px;
+        width: 349px;
+        padding: 2rem;
+        margin-top: 1.5rem;
+        &__logo {
+        }
+        &__name {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .hobby {
+    height: 100vh;
+    width: 100%;
+    &__box {
+      margin-bottom: 3rem;
+      &__subtitle {
+        margin: 30px 0 3px;
+        height: 3rem;
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+      }
+      &__bar {
+        height: 1.9px;
+        width: 6rem;
+        background-color: black;
+        margin: 0 auto;
+      }
+    }
+    &__main {
+      height: 100vh;
+      width: 100%;
+      &__box {
+        width: 320px;
+        height: 250px;
+        background-color: lightsalmon;
+        overflow: hidden;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        position: relative;
+        &__img {
+          width: 100%;
+          height: 100%;
+        }
+        &__caption {
+          height: 200px;
+          width: 250px;
+          background-color: black;
+          color: #eee;
+          position: absolute;
+          top: 0;
+          left: 10%;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          transform: translateY(100%);
+          opacity: 0;
+          transition: all 0.5s;
+          h3 {
+            margin: 10px 30px;
+            transform: translateY(60px);
+            transition: all 0.5s;
+          }
+          p {
+            margin: 10px 16px;
+            transform: translateY(60px);
+            transition: all 0.5s;
+          }
+        }
+        &:hover > &__caption {
+          opacity: 1;
+          transform: translateY(30px);
+          h3 {
+            transform: translateY(10px);
+          }
+          p {
+            transform: translateY(0px);
+          }
+        }
+      }
+    }
+  }
 }
 
+//about画面のアニメーション
 @keyframes anime {
   0%,
   100% {

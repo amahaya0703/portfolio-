@@ -65,6 +65,9 @@ button {
   header nav .hamberger_menu .bar:after {
     transform: translateY(9px);
   }
+  .main {
+    box-shadow: 5px 5px 5px 5px rgba(1, 0, 0, 0.5);
+  }
   .main .header {
     min-height: 100vh;
     width: 100%;
@@ -105,15 +108,16 @@ button {
   .about {
     height: 100vh;
     width: 100%;
+    box-shadow: 0.1px 4px rgba(146, 161, 176, 0.15);
   }
-  .about .subtitle {
+  .about__box__subtitle {
     height: 3rem;
     width: 100%;
     margin: 30px 0 3px;
     text-align: center;
     font-size: 2rem;
   }
-  .about .about-bar {
+  .about__box__bar {
     height: 1.9px;
     width: 6rem;
     background-color: black;
@@ -136,7 +140,8 @@ button {
     font-size: 1.2rem;
   }
   .about .about-main .selfIntroduction .text {
-    margin-top: 20px;
+    text-align: justify;
+    margin: 20px 30px 0 30px;
   }
   .about .my-sns {
     margin-top: 80px;
@@ -175,6 +180,218 @@ button {
   .about .my-sns .sns:hover::before {
     transform: translate(0);
     animation: anime 0.4s linear;
+  }
+  .skills {
+    width: 100%;
+    padding-bottom: 30px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  }
+  .skills__box {
+    margin-bottom: 3rem;
+  }
+  .skills__box__subtitle {
+    margin: 30px 0 3px;
+    height: 3rem;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .skills__box__bar {
+    height: 1.9px;
+    width: 6rem;
+    background-color: black;
+    margin: 0 auto;
+  }
+  .skills__top {
+    height: 393px;
+    width: 349px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .skills__top .html {
+    background-color: #f1f0f5;
+    border: 1px solid #353941;
+    height: 115px;
+    width: 349px;
+    padding: 2rem;
+  }
+  .skills__top .html__name {
+    font-weight: 600;
+  }
+  .skills__top .css {
+    background-color: #f1f0f5;
+    border: 1px solid #353941;
+    height: 115px;
+    width: 349px;
+    padding: 2rem;
+    margin-top: 1.5rem;
+  }
+  .skills__top .css__name {
+    font-weight: 600;
+  }
+  .skills__top .js {
+    background-color: #f1f0f5;
+    border: 1px solid #353941;
+    height: 115px;
+    width: 349px;
+    padding: 2rem;
+    margin-top: 1.5rem;
+  }
+  .skills__top .js__name {
+    font-weight: 600;
+  }
+  .skills__center {
+    height: 393px;
+    width: 349px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .skills__center .sass {
+    background-color: #f1f0f5;
+    border: 1px solid #353941;
+    height: 115px;
+    width: 349px;
+    padding: 2rem;
+    margin-top: 1.5rem;
+  }
+  .skills__center .sass__name {
+    font-weight: 600;
+  }
+  .skills__center .vue {
+    background-color: #f1f0f5;
+    border: 1px solid #353941;
+    height: 115px;
+    width: 349px;
+    padding: 2rem;
+    margin-top: 1.5rem;
+  }
+  .skills__center .vue__name {
+    font-weight: 600;
+  }
+  .skills__center .bootstrap {
+    background-color: #f1f0f5;
+    border: 1px solid #353941;
+    height: 115px;
+    width: 349px;
+    padding: 2rem;
+    margin-top: 1.5rem;
+  }
+  .skills__center .bootstrap__name {
+    font-weight: 600;
+  }
+  .skills__end {
+    height: 393px;
+    width: 349px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .skills__end .php {
+    background-color: #f1f0f5;
+    border: 1px solid #353941;
+    height: 115px;
+    width: 349px;
+    padding: 2rem;
+    margin-top: 1.5rem;
+  }
+  .skills__end .php__name {
+    font-weight: 600;
+  }
+  .skills__end .android {
+    background-color: #f1f0f5;
+    border: 1px solid #353941;
+    height: 115px;
+    width: 349px;
+    padding: 2rem;
+    margin-top: 1.5rem;
+  }
+  .skills__end .android__name {
+    font-weight: 600;
+  }
+  .skills__end .aws {
+    background-color: #f1f0f5;
+    border: 1px solid #353941;
+    height: 115px;
+    width: 349px;
+    padding: 2rem;
+    margin-top: 1.5rem;
+  }
+  .skills__end .aws__name {
+    font-weight: 600;
+  }
+
+  .hobby {
+    height: 100vh;
+    width: 100%;
+  }
+  .hobby__box {
+    margin-bottom: 3rem;
+  }
+  .hobby__box__subtitle {
+    margin: 30px 0 3px;
+    height: 3rem;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .hobby__box__bar {
+    height: 1.9px;
+    width: 6rem;
+    background-color: black;
+    margin: 0 auto;
+  }
+  .hobby__main {
+    height: 100vh;
+    width: 100%;
+  }
+  .hobby__main__box {
+    width: 320px;
+    height: 250px;
+    background-color: lightsalmon;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .hobby__main__box__img {
+    width: 100%;
+    height: 100%;
+  }
+  .hobby__main__box__caption {
+    height: 200px;
+    width: 250px;
+    background-color: black;
+    color: #eee;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  .hobby__main__box__caption h3 {
+    margin: 10px 30px;
+    transform: translateY(60px);
+    transition: all 0.5s;
+  }
+  .hobby__main__box__caption p {
+    margin: 10px 16px;
+    transform: translateY(60px);
+    transition: all 0.5s;
+  }
+  .hobby__main__box:hover > .hobby__main__box__caption {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  .hobby__main__box:hover > .hobby__main__box__caption h3 {
+    transform: translateY(10px);
+  }
+  .hobby__main__box:hover > .hobby__main__box__caption p {
+    transform: translateY(0px);
   }
 }
 

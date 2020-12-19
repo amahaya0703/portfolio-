@@ -108,7 +108,7 @@ button {
   .about {
     height: 100vh;
     width: 100%;
-    box-shadow: 24px 14px 13px rgba(0, 0, 0, 0.5);
+    box-shadow: 0.1px 4px rgba(146, 161, 176, 0.15);
   }
   .about__box__subtitle {
     height: 3rem;
@@ -318,6 +318,7 @@ button {
   .skills__end .aws__name {
     font-weight: 600;
   }
+
   .hobby {
     height: 100vh;
     width: 100%;

@@ -17,6 +17,11 @@ button {
   header {
     width: 100%;
     box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #eee;
+    z-index: 1;
   }
   header nav {
     max-width: 72rem;
@@ -34,6 +39,29 @@ button {
   }
   header nav .logo span {
     font-weight: 300;
+  }
+  header nav .show {
+    height: 100%;
+    width: 80%;
+    padding: 20px 30px;
+    position: fixed;
+    top: 64px;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+  }
+  header nav .show__lists {
+    list-style: none;
+  }
+  header nav .show__lists__list {
+    margin-bottom: 16px;
+  }
+  header nav .show__lists__list a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 2px;
   }
   header nav .hamberger_menu {
     cursor: pointer;
@@ -108,7 +136,7 @@ button {
   .about {
     height: 100vh;
     width: 100%;
-    box-shadow: 0.1px 4px rgba(146, 161, 176, 0.15);
+    box-shadow: 24px 14px 13px rgba(0, 0, 0, 0.5);
   }
   .about__box__subtitle {
     height: 3rem;
@@ -318,10 +346,10 @@ button {
   .skills__end .aws__name {
     font-weight: 600;
   }
-
   .hobby {
-    height: 100vh;
     width: 100%;
+    padding-bottom: 30px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   }
   .hobby__box {
     margin-bottom: 3rem;
@@ -340,13 +368,10 @@ button {
     margin: 0 auto;
   }
   .hobby__main {
-    height: 100vh;
     width: 100%;
   }
   .hobby__main__box {
     width: 320px;
-    height: 250px;
-    background-color: lightsalmon;
     overflow: hidden;
     margin: 0 auto;
     margin-bottom: 20px;
@@ -374,24 +399,89 @@ button {
     transition: all 0.5s;
   }
   .hobby__main__box__caption h3 {
-    margin: 10px 30px;
+    margin: 5px 30px;
     transform: translateY(60px);
     transition: all 0.5s;
   }
   .hobby__main__box__caption p {
-    margin: 10px 16px;
+    margin: 0 16px;
     transform: translateY(60px);
     transition: all 0.5s;
   }
   .hobby__main__box:hover > .hobby__main__box__caption {
     opacity: 1;
-    transform: translateY(30px);
+    transform: translateY(-1px);
   }
   .hobby__main__box:hover > .hobby__main__box__caption h3 {
     transform: translateY(10px);
   }
   .hobby__main__box:hover > .hobby__main__box__caption p {
     transform: translateY(0px);
+  }
+  .contact {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  .contact__box {
+    margin-bottom: 3rem;
+  }
+  .contact__box__subtitle {
+    margin: 30px 0 3px;
+    height: 3rem;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .contact__box__bar {
+    height: 1.9px;
+    width: 6rem;
+    background-color: black;
+    margin: 0 auto;
+  }
+  .contact__text {
+    padding: 0 30px;
+  }
+  .contact__text p {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+  .contact__input {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .contact__input__form {
+    margin-top: 20px;
+  }
+  .contact__input__form__row__parent {
+    padding: 0 20px 0 20px;
+    margin-bottom: 30px;
+  }
+  .contact__input__form__row__parent__name {
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+  }
+  .contact__input__form__row__parent__email {
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+  }
+  .contact__input__form__row__parent__subject {
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+  }
+  .contact__input__form__row__parent__contents {
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+  }
+  .contact__input__form__row__parent__button {
+    height: 43px;
+    width: 110px;
+    text-transform: uppercase;
+    padding: 0.375rem 0.75rem;
+    background-color: #64b7f6;
+    border-radius: 11px;
+    border: none;
+    color: #eee;
   }
 }
 

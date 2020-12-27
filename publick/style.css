@@ -124,6 +124,12 @@ button {
   .parent.action .bar:after {
     transform: translateY(0) rotate(-45deg) !important;
   }
+  .parent.action .show {
+    animation: yoko 1s forwards reverse;
+  }
+  .parent .show {
+    animation: modoru 1s forwards;
+  }
   .main {
     box-shadow: 5px 5px 5px 5px rgba(1, 0, 0, 0.5);
   }
@@ -525,5 +531,23 @@ button {
   50% {
     height: 50%;
     width: 50%;
+  }
+}
+
+@keyframes yoko {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translateX(100vh);
+  }
+}
+
+@keyframes modoru {
+  100% {
+    transform: translateX(100vh);
+  }
+  0% {
+    transform: translate(0);
   }
 }

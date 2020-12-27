@@ -20,63 +20,128 @@ button {
     width: 100%;
   }
   // ヘッダー部分 //
-  header {
-    width: 100%;
-    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #eee;
-    z-index: 1;
-    nav {
-      max-width: 72rem;
+  .parent {
+    header {
       width: 100%;
-      padding: 0 1.2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      .logo {
-        font-size: 1.2rem;
-        font-weight: 600;
-        letter-spacing: 2px;
-        line-height: 4rem;
-        span {
-          font-weight: 300;
-        }
-      }
-      .hamberger_menu {
-        cursor: pointer;
-        height: 4rem;
-        width: 3rem;
+      box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #eee;
+      z-index: 1;
+      nav {
+        max-width: 72rem;
+        width: 100%;
+        padding: 0 1.2rem;
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        justify-content: flex-end;
-        .bar {
-          height: 1.5px;
-          width: 1.9rem;
-          border-radius: 2px;
-          background-color: black;
-          transition: 0.5s;
-          position: relative;
-          &:before,
-          &:after {
-            content: "";
-            position: absolute;
-            height: inherit;
-            width: inherit;
+
+        .logo {
+          font-size: 1.2rem;
+          font-weight: 600;
+          letter-spacing: 2px;
+          line-height: 4rem;
+          span {
+            font-weight: 300;
+          }
+        }
+
+        .hamberger_menu {
+          cursor: pointer;
+          height: 4rem;
+          width: 3rem;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+
+          .bar {
+            height: 1.5px;
+            width: 1.9rem;
+            border-radius: 2px;
             background-color: black;
             transition: 0.5s;
+            position: relative;
+
+            &:before,
+            &:after {
+              content: "";
+              position: absolute;
+              height: inherit;
+              width: inherit;
+              background-color: black;
+              transition: 0.5s;
+            }
+            &:before {
+              transform: translateY(-9px);
+            }
+            &:after {
+              transform: translateY(9px);
+            }
           }
-          &:before {
-            transform: translateY(-9px);
-          }
-          &:after {
-            transform: translateY(9px);
+        }
+
+        .show {
+          height: 100%;
+          width: 80%;
+          padding: 20px 30px;
+          position: fixed;
+          top: 64px;
+          right: 0;
+          background-color: rgba(255, 255, 255, 0.3);
+          backdrop-filter: blur(10px);
+          &__lists {
+            list-style: none;
+            &__list {
+              width: 110px;
+              margin: 0 20px;
+              margin-bottom: 61px;
+              padding: 10px 20px;
+              position: relative;
+              transition: all 0.2s;
+              transition-delay: 0.2s;
+              a {
+                color: black;
+                text-decoration: none;
+                font-size: 1.2rem;
+              }
+              &:before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 110px;
+                height: 2px;
+                background-color: #eee;
+                transition: all 0.2s;
+              }
+
+              &:hover {
+                background-color: rgb(255, 63, 63);
+                &:before {
+                  bottom: 40px;
+                  background-color: rgb(255, 63, 63);
+                }
+              }
+            }
           }
         }
       }
     }
+    &.action {
+      .bar {
+        transform: rotate(360deg);
+        background-color: transparent !important;
+        &:before {
+          transform: translateY(0) rotate(45deg) !important;
+        }
+        &:after {
+          transform: translateY(0) rotate(-45deg) !important;
+        }
+      }
+    }
   }
+
   // ホーム画面部分 //
   .main {
     box-shadow: 5px 5px 5px 5px rgba(0.5, 0, 0, 0.5);

@@ -139,6 +139,13 @@ button {
           transform: translateY(0) rotate(-45deg) !important;
         }
       }
+      .show {
+        animation: yoko 1s forwards reverse;
+        //animation: modoru 1s forwards reverse;
+      }
+    }
+    .show {
+      animation: modoru 1s forwards;
     }
   }
 
@@ -554,5 +561,23 @@ button {
   50% {
     height: 50%;
     width: 50%;
+  }
+}
+
+@keyframes yoko {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translateX(100vh);
+  }
+}
+
+@keyframes modoru {
+  100% {
+    transform: translateX(100vh);
+  }
+  0% {
+    transform: translate(0);
   }
 }

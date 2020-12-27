@@ -1,6 +1,6 @@
 const hamberger = document.querySelector(".hamberger_menu");
-const show = document.querySelector(".show");
+const parent = document.querySelector(".parent");
 
 hamberger.addEventListener("click", () => {
-  show.classList.toggle("active");
+  parent.classList.toggle("action");
 });

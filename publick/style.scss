@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body,
 button {
   font-family: "Poppins", sans-serif;
@@ -88,11 +92,15 @@ button {
           position: fixed;
           top: 64px;
           right: 0;
-          background-color: rgba(255, 255, 255, 0.3);
+          background-color: rgba(43, 51, 59, 0.8);
           backdrop-filter: blur(10px);
           &__lists {
             list-style: none;
-            &__list {
+            &__home,
+            &__about,
+            &__skills,
+            &__hobby,
+            &__contact {
               width: 110px;
               margin: 0 20px;
               margin-bottom: 61px;
@@ -101,7 +109,7 @@ button {
               transition: all 0.2s;
               transition-delay: 0.2s;
               a {
-                color: black;
+                color: #eee;
                 text-decoration: none;
                 font-size: 1.2rem;
               }
@@ -140,12 +148,11 @@ button {
         }
       }
       .show {
-        animation: yoko 1s forwards reverse;
-        //animation: modoru 1s forwards reverse;
+        animation: yoko 0.5s forwards reverse;
       }
     }
     .show {
-      animation: modoru 1s forwards;
+      animation: modoru 0.5s forwards;
     }
   }
 
@@ -155,7 +162,7 @@ button {
     .header {
       min-height: 100vh;
       width: 100%;
-      background: url("../img/bg.jpg") top center/cover;
+      background: url("../img/しま.jpg") top center/cover;
       position: relative;
       .overlay {
         position: absolute;
@@ -191,11 +198,11 @@ button {
     }
   }
   // about画面について //
-  .about {
+  #about {
     height: 100vh;
     width: 100%;
     box-shadow: 24px 14px 13px rgba(0, 0, 0, 0.5);
-    &__box {
+    .box {
       &__subtitle {
         height: 3rem;
         width: 100%;
@@ -270,11 +277,11 @@ button {
     }
   }
   // skills画面について //
-  .skills {
+  #skills {
     width: 100%;
     padding-bottom: 30px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-    &__box {
+    .box {
       margin-bottom: 3rem;
       &__subtitle {
         margin: 30px 0 3px;
@@ -290,7 +297,7 @@ button {
         margin: 0 auto;
       }
     }
-    &__top {
+    .top {
       height: 393px;
       width: 349px;
       margin: 0 auto;
@@ -328,7 +335,7 @@ button {
         }
       }
     }
-    &__center {
+    .center {
       height: 393px;
       width: 349px;
       margin: 0 auto;
@@ -367,7 +374,7 @@ button {
         }
       }
     }
-    &__end {
+    .end {
       height: 393px;
       width: 349px;
       margin: 0 auto;
@@ -409,11 +416,11 @@ button {
   }
 
   // hobby画面について //
-  .hobby {
+  #hobby {
     width: 100%;
     padding-bottom: 30px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-    &__box {
+    .box {
       margin-bottom: 3rem;
       &__subtitle {
         margin: 30px 0 3px;
@@ -429,9 +436,10 @@ button {
         margin: 0 auto;
       }
     }
-    &__main {
+    .main {
       width: 100%;
-      &__box {
+      display: contents;
+      .box {
         width: 320px;
         overflow: hidden;
         margin: 0 auto;
@@ -468,6 +476,7 @@ button {
             transition: all 0.5s;
           }
         }
+
         &:hover > &__caption {
           opacity: 1;
           transform: translateY(-1px);
@@ -482,10 +491,10 @@ button {
     }
   }
   // contact画面について //
-  .contact {
+  #contact {
     width: 100%;
     padding-bottom: 30px;
-    &__box {
+    .box {
       margin-bottom: 3rem;
       &__subtitle {
         margin: 30px 0 3px;
@@ -501,7 +510,7 @@ button {
         margin: 0 auto;
       }
     }
-    &__text {
+    .text {
       padding: 0 30px;
       p {
         text-align: center;
@@ -509,7 +518,7 @@ button {
         font-weight: 400;
       }
     }
-    &__input {
+    .input {
       margin-top: 30px;
       text-align: center;
       &__form {

@@ -413,18 +413,18 @@ button {
     width: 100%;
     display: contents;
   }
-  #hobby .main .box {
+  #hobby .main__box {
     width: 320px;
     overflow: hidden;
     margin: 0 auto;
     margin-bottom: 20px;
     position: relative;
   }
-  #hobby .main .box__img {
+  #hobby .main__box__img {
     width: 100%;
     height: 100%;
   }
-  #hobby .main .box__caption {
+  #hobby .main__box .caption {
     height: 200px;
     width: 250px;
     background-color: black;
@@ -441,24 +441,24 @@ button {
     opacity: 0;
     transition: all 0.5s;
   }
-  #hobby .main .box__caption h3 {
+  #hobby .main__box .caption h3 {
     margin: 5px 30px;
     transform: translateY(60px);
     transition: all 0.5s;
   }
-  #hobby .main .box__caption p {
+  #hobby .main__box .caption p {
     margin: 0 16px;
     transform: translateY(60px);
     transition: all 0.5s;
   }
-  #hobby .main .box:hover > #hobby .main .box__caption {
+  #hobby .main__box:hover > .caption {
     opacity: 1;
-    transform: translateY(-1px);
+    transform: translateY(10%);
   }
-  #hobby .main .box:hover > #hobby .main .box__caption h3 {
-    transform: translateY(10px);
+  #hobby .main__box:hover > .caption h3 {
+    transform: translateY(0px);
   }
-  #hobby .main .box:hover > #hobby .main .box__caption p {
+  #hobby .main__box:hover > .caption p {
     transform: translateY(0px);
   }
   #contact {

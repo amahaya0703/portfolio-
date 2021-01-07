@@ -77,8 +77,8 @@ button {
   }
   .parent header nav .show {
     height: 100%;
-    width: 80%;
-    padding: 20px 30px;
+    width: 51%;
+    padding: 20px 15px;
     position: fixed;
     top: 64px;
     right: 0;
@@ -90,14 +90,14 @@ button {
   }
   .parent header nav .show__lists__home, .parent header nav .show__lists__about, .parent header nav .show__lists__skills, .parent header nav .show__lists__hobby, .parent header nav .show__lists__contact {
     width: 110px;
-    margin: 0 20px;
-    margin-bottom: 61px;
+    margin: 0 24px;
+    margin-bottom: 24px;
     padding: 10px 20px;
     position: relative;
     transition: all 0.2s;
     transition-delay: 0.2s;
   }
-  .parent header nav .show__lists__home a, .parent header nav .show__lists__about a, .parent header nav .show__lists__skills a, .parent header nav .show__lists__hobby a, .parent header nav .show__lists__contact a {
+  .parent header nav .show__lists__home .nav_link, .parent header nav .show__lists__about .nav_link, .parent header nav .show__lists__skills .nav_link, .parent header nav .show__lists__hobby .nav_link, .parent header nav .show__lists__contact .nav_link {
     color: #eee;
     text-decoration: none;
     font-size: 1.2rem;
@@ -397,6 +397,7 @@ button {
     margin-bottom: 3rem;
   }
   #hobby .box__subtitle {
+    font-weight: 700;
     margin: 30px 0 3px;
     height: 3rem;
     width: 100%;
@@ -469,6 +470,7 @@ button {
     margin-bottom: 3rem;
   }
   #contact .box__subtitle {
+    font-weight: 700;
     margin: 30px 0 3px;
     height: 3rem;
     width: 100%;
@@ -496,27 +498,27 @@ button {
   #contact .input__form {
     margin-top: 20px;
   }
-  #contact .input__form__row__parent {
+  #contact .input__form .row__parent {
     padding: 0 20px 0 20px;
     margin-bottom: 30px;
   }
-  #contact .input__form__row__parent__name {
+  #contact .input__form .row__parent__name {
     width: 100%;
     padding: 0.375rem 0.75rem;
   }
-  #contact .input__form__row__parent__email {
+  #contact .input__form .row__parent__email {
     width: 100%;
     padding: 0.375rem 0.75rem;
   }
-  #contact .input__form__row__parent__subject {
+  #contact .input__form .row__parent__subject {
     width: 100%;
     padding: 0.375rem 0.75rem;
   }
-  #contact .input__form__row__parent__contents {
+  #contact .input__form .row__parent__contents {
     width: 100%;
     padding: 0.375rem 0.75rem;
   }
-  #contact .input__form__row__parent__button {
+  #contact .input__form .row__parent__button {
     height: 43px;
     width: 110px;
     text-transform: uppercase;

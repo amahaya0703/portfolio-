@@ -87,8 +87,8 @@ button {
 
         .show {
           height: 100%;
-          width: 80%;
-          padding: 20px 30px;
+          width: 51%;
+          padding: 20px 15px;
           position: fixed;
           top: 64px;
           right: 0;
@@ -102,13 +102,13 @@ button {
             &__hobby,
             &__contact {
               width: 110px;
-              margin: 0 20px;
-              margin-bottom: 61px;
+              margin: 0 24px;
+              margin-bottom: 24px;
               padding: 10px 20px;
               position: relative;
               transition: all 0.2s;
               transition-delay: 0.2s;
-              a {
+              .nav_link {
                 color: #eee;
                 text-decoration: none;
                 font-size: 1.2rem;
@@ -423,6 +423,7 @@ button {
     .box {
       margin-bottom: 3rem;
       &__subtitle {
+        font-weight: 700;
         margin: 30px 0 3px;
         height: 3rem;
         width: 100%;
@@ -497,6 +498,7 @@ button {
     .box {
       margin-bottom: 3rem;
       &__subtitle {
+        font-weight: 700;
         margin: 30px 0 3px;
         height: 3rem;
         width: 100%;
@@ -523,7 +525,7 @@ button {
       text-align: center;
       &__form {
         margin-top: 20px;
-        &__row {
+        .row {
           &__parent {
             padding: 0 20px 0 20px;
             margin-bottom: 30px;

@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body,
 button {
   font-family: "Poppins", sans-serif;
@@ -20,93 +24,145 @@ button {
     width: 100%;
   }
   // ヘッダー部分 //
-  header {
-    width: 100%;
-    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #eee;
-    z-index: 1;
-    nav {
-      max-width: 72rem;
+  .parent {
+    header {
       width: 100%;
-      padding: 0 1.2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      .logo {
-        font-size: 1.2rem;
-        font-weight: 600;
-        letter-spacing: 2px;
-        line-height: 4rem;
-        span {
-          font-weight: 300;
+      box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #eee;
+      z-index: 1;
+      nav {
+        max-width: 72rem;
+        width: 100%;
+        padding: 0 1.2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+          font-size: 1.2rem;
+          font-weight: 600;
+          letter-spacing: 2px;
+          line-height: 4rem;
+          span {
+            font-weight: 300;
+          }
         }
-      }
-      .show {
-        height: 100%;
-        width: 80%;
-        padding: 20px 30px;
-        position: fixed;
-        top: 64px;
-        right: 0;
-        background-color: rgba(255, 255, 255, 0.3);
-        backdrop-filter: blur(10px);
-        &__lists {
-          list-style: none;
-          &__list {
-            margin-bottom: 16px;
-            a {
-              color: black;
-              text-decoration: none;
-              font-size: 1.2rem;
-              font-weight: 600;
-              letter-spacing: 2px;
+
+        .hamberger_menu {
+          cursor: pointer;
+          height: 4rem;
+          width: 3rem;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+
+          .bar {
+            height: 1.5px;
+            width: 1.9rem;
+            border-radius: 2px;
+            background-color: black;
+            transition: 0.5s;
+            position: relative;
+
+            &:before,
+            &:after {
+              content: "";
+              position: absolute;
+              height: inherit;
+              width: inherit;
+              background-color: black;
+              transition: 0.5s;
+            }
+            &:before {
+              transform: translateY(-9px);
+            }
+            &:after {
+              transform: translateY(9px);
+            }
+          }
+        }
+
+        .show {
+          height: 100%;
+          width: 51%;
+          padding: 20px 15px;
+          position: fixed;
+          top: 64px;
+          right: 0;
+          background-color: rgba(43, 51, 59, 0.8);
+          backdrop-filter: blur(10px);
+          &__lists {
+            list-style: none;
+            &__home,
+            &__about,
+            &__skills,
+            &__hobby,
+            &__contact {
+              width: 110px;
+              margin: 0 24px;
+              margin-bottom: 24px;
+              padding: 10px 20px;
+              position: relative;
+              transition: all 0.2s;
+              transition-delay: 0.2s;
+              .nav_link {
+                color: #eee;
+                text-decoration: none;
+                font-size: 1.2rem;
+              }
+              &:before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 110px;
+                height: 2px;
+                background-color: #eee;
+                transition: all 0.2s;
+              }
+
+              &:hover {
+                background-color: rgb(255, 63, 63);
+                &:before {
+                  bottom: 40px;
+                  background-color: rgb(255, 63, 63);
+                }
+              }
             }
           }
         }
       }
-      .hamberger_menu {
-        cursor: pointer;
-        height: 4rem;
-        width: 3rem;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        .bar {
-          height: 1.5px;
-          width: 1.9rem;
-          border-radius: 2px;
-          background-color: black;
-          transition: 0.5s;
-          position: relative;
-          &:before,
-          &:after {
-            content: "";
-            position: absolute;
-            height: inherit;
-            width: inherit;
-            background-color: black;
-            transition: 0.5s;
-          }
-          &:before {
-            transform: translateY(-9px);
-          }
-          &:after {
-            transform: translateY(9px);
-          }
+    }
+    &.action {
+      .bar {
+        transform: rotate(360deg);
+        background-color: transparent !important;
+        &:before {
+          transform: translateY(0) rotate(45deg) !important;
+        }
+        &:after {
+          transform: translateY(0) rotate(-45deg) !important;
         }
       }
+      .show {
+        animation: yoko 0.5s forwards reverse;
+      }
+    }
+    .show {
+      animation: modoru 0.5s forwards;
     }
   }
+
   // ホーム画面部分 //
   .main {
     box-shadow: 5px 5px 5px 5px rgba(0.5, 0, 0, 0.5);
     .header {
       min-height: 100vh;
       width: 100%;
-      background: url("../img/bg.jpg") top center/cover;
+      background: url("../img/しま.jpg") top center/cover;
       position: relative;
       .overlay {
         position: absolute;
@@ -142,11 +198,11 @@ button {
     }
   }
   // about画面について //
-  .about {
+  #about {
     height: 100vh;
     width: 100%;
     box-shadow: 24px 14px 13px rgba(0, 0, 0, 0.5);
-    &__box {
+    .box {
       &__subtitle {
         height: 3rem;
         width: 100%;
@@ -221,11 +277,11 @@ button {
     }
   }
   // skills画面について //
-  .skills {
+  #skills {
     width: 100%;
     padding-bottom: 30px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-    &__box {
+    .box {
       margin-bottom: 3rem;
       &__subtitle {
         margin: 30px 0 3px;
@@ -241,7 +297,7 @@ button {
         margin: 0 auto;
       }
     }
-    &__top {
+    .top {
       height: 393px;
       width: 349px;
       margin: 0 auto;
@@ -279,7 +335,7 @@ button {
         }
       }
     }
-    &__center {
+    .center {
       height: 393px;
       width: 349px;
       margin: 0 auto;
@@ -318,7 +374,7 @@ button {
         }
       }
     }
-    &__end {
+    .end {
       height: 393px;
       width: 349px;
       margin: 0 auto;
@@ -360,13 +416,14 @@ button {
   }
 
   // hobby画面について //
-  .hobby {
+  #hobby {
     width: 100%;
     padding-bottom: 30px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-    &__box {
+    .box {
       margin-bottom: 3rem;
       &__subtitle {
+        font-weight: 700;
         margin: 30px 0 3px;
         height: 3rem;
         width: 100%;
@@ -380,8 +437,9 @@ button {
         margin: 0 auto;
       }
     }
-    &__main {
+    .main {
       width: 100%;
+      display: contents;
       &__box {
         width: 320px;
         overflow: hidden;
@@ -392,7 +450,7 @@ button {
           width: 100%;
           height: 100%;
         }
-        &__caption {
+        .caption {
           height: 200px;
           width: 250px;
           background-color: black;
@@ -419,11 +477,12 @@ button {
             transition: all 0.5s;
           }
         }
-        &:hover > &__caption {
+
+        &:hover > .caption {
           opacity: 1;
-          transform: translateY(-1px);
+          transform: translateY(10%);
           h3 {
-            transform: translateY(10px);
+            transform: translateY(0px);
           }
           p {
             transform: translateY(0px);
@@ -433,12 +492,13 @@ button {
     }
   }
   // contact画面について //
-  .contact {
+  #contact {
     width: 100%;
     padding-bottom: 30px;
-    &__box {
+    .box {
       margin-bottom: 3rem;
       &__subtitle {
+        font-weight: 700;
         margin: 30px 0 3px;
         height: 3rem;
         width: 100%;
@@ -452,7 +512,7 @@ button {
         margin: 0 auto;
       }
     }
-    &__text {
+    .text {
       padding: 0 30px;
       p {
         text-align: center;
@@ -460,12 +520,12 @@ button {
         font-weight: 400;
       }
     }
-    &__input {
+    .input {
       margin-top: 30px;
       text-align: center;
       &__form {
         margin-top: 20px;
-        &__row {
+        .row {
           &__parent {
             padding: 0 20px 0 20px;
             margin-bottom: 30px;
@@ -512,5 +572,23 @@ button {
   50% {
     height: 50%;
     width: 50%;
+  }
+}
+
+@keyframes yoko {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translateX(100vh);
+  }
+}
+
+@keyframes modoru {
+  100% {
+    transform: translateX(100vh);
+  }
+  0% {
+    transform: translate(0);
   }
 }

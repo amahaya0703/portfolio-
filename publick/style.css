@@ -91,7 +91,7 @@ button {
   .parent header nav .show__lists__home, .parent header nav .show__lists__about, .parent header nav .show__lists__skills, .parent header nav .show__lists__hobby, .parent header nav .show__lists__contact {
     width: 110px;
     margin: 0 24px;
-    margin-bottom: 24px;
+    margin-bottom: 30px;
     padding: 10px 20px;
     position: relative;
     transition: all 0.2s;

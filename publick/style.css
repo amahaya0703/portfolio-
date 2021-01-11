@@ -177,7 +177,6 @@ button {
     cursor: pointer;
   }
   #about {
-    min-width: 800px;
     height: 100vh;
     width: 100%;
     box-shadow: 24px 14px 13px rgba(0, 0, 0, 0.5);
@@ -254,7 +253,6 @@ button {
     animation: anime 0.4s linear;
   }
   #skills {
-    min-width: 800px;
     width: 100%;
     padding-bottom: 30px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
@@ -287,7 +285,7 @@ button {
     width: 349px;
     min-width: 230px;
     padding: 2rem;
-    margin-left: 24px;
+    margin-left: 5px;
   }
   #skills .top .html__name {
     font-weight: 600;
@@ -299,7 +297,7 @@ button {
     width: 349px;
     min-width: 230px;
     padding: 2rem;
-    margin-left: 24px;
+    margin-left: 12px;
   }
   #skills .top .css__name {
     font-weight: 600;
@@ -311,7 +309,7 @@ button {
     width: 349px;
     min-width: 230px;
     padding: 2rem;
-    margin: 0 24px;
+    margin: 0 5px 0 12px;
   }
   #skills .top .js__name {
     font-weight: 600;
@@ -327,9 +325,10 @@ button {
     height: 115px;
     width: 349px;
     min-width: 230px;
+    margin-left: 5px;
     padding: 2rem;
     margin-top: 1.5rem;
-    margin-left: 24px;
+    margin-left: 5px;
   }
   #skills .center .sass__name {
     font-weight: 600;
@@ -341,8 +340,7 @@ button {
     width: 349px;
     min-width: 230px;
     padding: 2rem;
-    margin-left: 24px;
-    margin-top: 1.5rem;
+    margin: 24px 0 0 12px;
   }
   #skills .center .vue__name {
     font-weight: 600;
@@ -354,7 +352,7 @@ button {
     width: 349px;
     min-width: 230px;
     padding: 2rem;
-    margin: 24px 24px 24px;
+    margin: 24px 5px 24px 12px;
   }
   #skills .center .bootstrap__name {
     font-weight: 600;
@@ -370,8 +368,9 @@ button {
     height: 115px;
     width: 349px;
     min-width: 230px;
+    margin-left: 5px;
     padding: 2rem;
-    margin: 0 0 0 24px;
+    margin: 0 0 0 5px;
   }
   #skills .end .php__name {
     font-weight: 600;
@@ -383,7 +382,7 @@ button {
     width: 349px;
     min-width: 230px;
     padding: 2rem;
-    margin: 0 0 0 24px;
+    margin: 0 0 0 12px;
   }
   #skills .end .android__name {
     font-weight: 600;
@@ -395,7 +394,7 @@ button {
     width: 349px;
     min-width: 230px;
     padding: 2rem;
-    margin: 0 24px 0 24px;
+    margin: 0 5px 24px 12px;
   }
   #skills .end .aws__name {
     font-weight: 600;
@@ -475,7 +474,6 @@ button {
     transform: translateY(0px);
   }
   #contact {
-    min-width: 800px;
     width: 100%;
     padding-bottom: 30px;
   }
@@ -548,7 +546,7 @@ button {
     min-width: 480px;
   }
   .parent header {
-    width: 100%;
+    width: 481px;
     box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
     position: fixed;
     top: 0;
@@ -557,9 +555,7 @@ button {
     z-index: 1;
   }
   .parent header nav {
-    max-width: 72rem;
-    width: 100%;
-    padding: 0 1.2rem;
+    width: 420px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -704,7 +700,6 @@ button {
     cursor: pointer;
   }
   #about {
-    min-width: 480px;
     height: 100vh;
     width: 100%;
     box-shadow: 24px 14px 13px rgba(0, 0, 0, 0.5);
@@ -782,7 +777,6 @@ button {
     animation: anime 0.4s linear;
   }
   #skills {
-    min-width: 480px;
     width: 100%;
     padding-bottom: 30px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
@@ -1006,7 +1000,6 @@ button {
     transform: translateY(0px);
   }
   #contact {
-    min-width: 480px;
     width: 100%;
     padding-bottom: 30px;
   }
@@ -1028,6 +1021,7 @@ button {
     margin: 0 auto;
   }
   #contact .text {
+    width: 453px;
     padding: 0 30px;
   }
   #contact .text p {
@@ -1036,10 +1030,12 @@ button {
     font-weight: 400;
   }
   #contact .input {
+    width: 716px;
     margin-top: 30px;
     text-align: center;
   }
   #contact .input__form {
+    width: 442px;
     margin-top: 20px;
   }
   #contact .input__form .row__parent {
@@ -1077,9 +1073,6 @@ button {
 @media screen and (min-width: 280px) {
   #about {
     height: 800px;
-  }
-  #contact .input {
-    width: 450px;
   }
 }
 

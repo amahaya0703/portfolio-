@@ -16,7 +16,7 @@ button {
 }
 
 /////////////////////////////////////////////////////////////
-//////////             タブレットサイズ画面           //////////
+//////////             PCサイズ画面                  //////////
 ////////////////////////////////////////////////////////////
 
 @media screen and (max-width: 800px) {
@@ -26,6 +26,7 @@ button {
   // ヘッダー部分 //
   .parent {
     header {
+      padding-right: 30px;
       width: 100%;
       box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
       position: fixed;
@@ -34,6 +35,7 @@ button {
       background-color: #eee;
       z-index: 1;
       nav {
+        margin-left: 20px;
         max-width: 72rem;
         width: 100%;
         padding: 0 1.2rem;
@@ -87,7 +89,8 @@ button {
 
         .show {
           height: 100%;
-          width: 24%;
+          min-width: 182px;
+          width: 184px;
           padding: 20px 15px;
           position: fixed;
           top: 64px;
@@ -306,8 +309,9 @@ button {
         border: 1px solid #353941;
         height: 115px;
         width: 349px;
+        min-width: 230px;
         padding: 2rem;
-        margin-left: 24px;
+        margin-left: 5px;
         &__name {
           font-weight: 600;
         }
@@ -317,8 +321,9 @@ button {
         border: 1px solid #353941;
         height: 115px;
         width: 349px;
+        min-width: 230px;
         padding: 2rem;
-        margin-left: 24px;
+        margin-left: 12px;
         &__name {
           font-weight: 600;
         }
@@ -328,8 +333,9 @@ button {
         border: 1px solid #353941;
         height: 115px;
         width: 349px;
+        min-width: 230px;
         padding: 2rem;
-        margin: 0 24px;
+        margin: 0 5px 0 12px;
         &__name {
           font-weight: 600;
         }
@@ -344,9 +350,11 @@ button {
         border: 1px solid #353941;
         height: 115px;
         width: 349px;
+        min-width: 230px;
+        margin-left: 5px;
         padding: 2rem;
         margin-top: 1.5rem;
-        margin-left: 24px;
+        margin-left: 5px;
         &__name {
           font-weight: 600;
         }
@@ -356,9 +364,9 @@ button {
         border: 1px solid #353941;
         height: 115px;
         width: 349px;
+        min-width: 230px;
         padding: 2rem;
-        margin-left: 24px;
-        margin-top: 1.5rem;
+        margin: 24px 0 0 12px;
         &__name {
           font-weight: 600;
         }
@@ -368,8 +376,9 @@ button {
         border: 1px solid #353941;
         height: 115px;
         width: 349px;
+        min-width: 230px;
         padding: 2rem;
-        margin: 24px 24px 24px;
+        margin: 24px 5px 24px 12px;
         &__name {
           font-weight: 600;
         }
@@ -384,8 +393,10 @@ button {
         border: 1px solid #353941;
         height: 115px;
         width: 349px;
+        min-width: 230px;
+        margin-left: 5px;
         padding: 2rem;
-        margin: 0 0 0 24px;
+        margin: 0 0 0 5px;
         &__name {
           font-weight: 600;
         }
@@ -395,8 +406,9 @@ button {
         border: 1px solid #353941;
         height: 115px;
         width: 349px;
+        min-width: 230px;
         padding: 2rem;
-        margin: 0 0 0 24px;
+        margin: 0 0 0 12px;
         &__name {
           font-weight: 600;
         }
@@ -406,8 +418,9 @@ button {
         border: 1px solid #353941;
         height: 115px;
         width: 349px;
+        min-width: 230px;
         padding: 2rem;
-        margin: 0 24px 0 24px;
+        margin: 0 5px 24px 12px;
         &__name {
           font-weight: 600;
         }
@@ -417,6 +430,7 @@ button {
 
   // hobby画面について //
   #hobby {
+    // min-width: 800px;
     width: 100%;
     padding-bottom: 30px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
@@ -440,7 +454,7 @@ button {
     .main {
       width: 100%;
       display: contents;
-      &__box {
+      .main__box {
         width: 320px;
         overflow: hidden;
         margin: 0 auto;
@@ -522,6 +536,569 @@ button {
     }
     .input {
       margin-top: 30px;
+
+      text-align: center;
+      &__form {
+        margin-top: 20px;
+        .row {
+          &__parent {
+            padding: 0 20px 0 20px;
+            margin-bottom: 30px;
+            &__name {
+              width: 100%;
+              padding: 0.375rem 0.75rem;
+            }
+            &__email {
+              width: 100%;
+              padding: 0.375rem 0.75rem;
+            }
+            &__subject {
+              width: 100%;
+              padding: 0.375rem 0.75rem;
+            }
+            &__contents {
+              width: 100%;
+              padding: 0.375rem 0.75rem;
+            }
+            &__button {
+              height: 43px;
+              width: 110px;
+              text-transform: uppercase;
+              padding: 0.375rem 0.75rem;
+              background-color: #64b7f6;
+              border-radius: 11px;
+              border: none;
+              color: #eee;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/////////////////////////////////////////////////////////////
+//////////             タブレットサイズ画面           //////////
+////////////////////////////////////////////////////////////
+
+@media screen and (min-width: 800px) {
+  body {
+    width: 100%;
+  }
+  // ヘッダー部分 //
+  .parent {
+    header {
+      padding-right: 30px;
+      width: 100%;
+      box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #eee;
+      z-index: 1;
+      nav {
+        margin-left: 20px;
+        max-width: 72rem;
+        width: 100%;
+        padding: 0 1.2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+          font-size: 1.2rem;
+          font-weight: 600;
+          letter-spacing: 2px;
+          line-height: 4rem;
+          span {
+            font-weight: 300;
+          }
+        }
+
+        .hamberger_menu {
+          cursor: pointer;
+          height: 4rem;
+          width: 3rem;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+
+          .bar {
+            height: 1.5px;
+            width: 1.9rem;
+            border-radius: 2px;
+            background-color: black;
+            transition: 0.5s;
+            position: relative;
+
+            &:before,
+            &:after {
+              content: "";
+              position: absolute;
+              height: inherit;
+              width: inherit;
+              background-color: black;
+              transition: 0.5s;
+            }
+            &:before {
+              transform: translateY(-9px);
+            }
+            &:after {
+              transform: translateY(9px);
+            }
+          }
+        }
+
+        .show {
+          height: 100%;
+          min-width: 182px;
+          width: 184px;
+          padding: 20px 15px;
+          position: fixed;
+          top: 64px;
+          right: 0;
+          background-color: rgba(43, 51, 59, 0.8);
+          backdrop-filter: blur(10px);
+          &__lists {
+            list-style: none;
+            &__home,
+            &__about,
+            &__skills,
+            &__hobby,
+            &__contact {
+              width: 110px;
+              margin: 0 24px;
+              margin-bottom: 30px;
+              padding: 10px 20px;
+              position: relative;
+              transition: all 0.2s;
+              transition-delay: 0.2s;
+              .nav_link {
+                color: #eee;
+                text-decoration: none;
+                font-size: 1.2rem;
+              }
+              &:before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 110px;
+                height: 2px;
+                background-color: #eee;
+                transition: all 0.2s;
+              }
+
+              &:hover {
+                background-color: rgb(255, 63, 63);
+                &:before {
+                  bottom: 40px;
+                  background-color: rgb(255, 63, 63);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &.action {
+      .bar {
+        transform: rotate(360deg);
+        background-color: transparent !important;
+        &:before {
+          transform: translateY(0) rotate(45deg) !important;
+        }
+        &:after {
+          transform: translateY(0) rotate(-45deg) !important;
+        }
+      }
+      .show {
+        animation: yoko 0.5s forwards reverse;
+      }
+    }
+    .show {
+      animation: modoru 0.5s forwards;
+    }
+  }
+
+  // ホーム画面部分 //
+  .main {
+    box-shadow: 5px 5px 5px 5px rgba(0.5, 0, 0, 0.5);
+    .header {
+      min-height: 100vh;
+      width: 100%;
+      background: url("../img/しま.jpg") top center/cover;
+      position: relative;
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(43, 51, 59, 0.8);
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .inner {
+          text-align: center;
+          color: #eee;
+          max-width: 35rem;
+          .name {
+            font-size: 3rem;
+            margin-bottom: 10px;
+          }
+          .btn {
+            text-decoration: none;
+            text-transform: uppercase;
+            margin-top: 1rem;
+            padding: 0.6rem 1.8rem;
+            background-color: #f577c1;
+            border: none;
+            border-radius: 25px;
+            color: #eee;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  // about画面について //
+  #about {
+    height: 100vh;
+    width: 100%;
+    box-shadow: 24px 14px 13px rgba(0, 0, 0, 0.5);
+    .box {
+      &__subtitle {
+        height: 3rem;
+        width: 100%;
+        margin: 30px 0 3px;
+        text-align: center;
+        font-size: 2rem;
+      }
+      &__bar {
+        height: 1.9px;
+        width: 6rem;
+        background-color: black;
+        margin: 0 auto;
+      }
+    }
+    .about-main {
+      text-align: center;
+      .frame {
+        text-align: center;
+        img {
+          border-radius: 10px;
+          margin-top: 27px;
+        }
+      }
+      .selfIntroduction {
+        margin-top: 50px;
+        h3 {
+          font-size: 1.2rem;
+        }
+        .text {
+          text-align: justify;
+          margin: 20px 30px 0 30px;
+        }
+      }
+    }
+    .my-sns {
+      margin-top: 80px;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .sns {
+        margin: 0 10px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        a {
+          color: #393e46;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: linear-gradient(to left, #b52b65, #eb6663);
+          height: 100%;
+          width: 100%;
+          z-index: -1;
+          border-radius: 50%;
+          transform: translate(100%, 100%);
+          transition: all 0.4s;
+        }
+        &:hover::before {
+          transform: translate(0);
+          animation: anime 0.4s linear;
+        }
+      }
+    }
+  }
+  // skills画面について //
+  #skills {
+    width: 100%;
+    padding-bottom: 30px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    .box {
+      margin-bottom: 3rem;
+      &__subtitle {
+        margin: 30px 0 3px;
+        height: 3rem;
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+      }
+      &__bar {
+        height: 1.9px;
+        width: 6rem;
+        background-color: black;
+        margin: 0 auto;
+      }
+    }
+    .top {
+      display: flex;
+      margin: 0 auto;
+      text-align: center;
+      .html {
+        background-color: #f1f0f5;
+        border: 1px solid #353941;
+        height: 115px;
+        width: 349px;
+        min-width: 230px;
+        padding: 2rem;
+        margin-left: 5px;
+        &__name {
+          font-weight: 600;
+        }
+      }
+      .css {
+        background-color: #f1f0f5;
+        border: 1px solid #353941;
+        height: 115px;
+        width: 349px;
+        min-width: 230px;
+        padding: 2rem;
+        margin-left: 12px;
+        &__name {
+          font-weight: 600;
+        }
+      }
+      .js {
+        background-color: #f1f0f5;
+        border: 1px solid #353941;
+        height: 115px;
+        width: 349px;
+        min-width: 230px;
+        padding: 2rem;
+        margin: 0 5px 0 12px;
+        &__name {
+          font-weight: 600;
+        }
+      }
+    }
+    .center {
+      display: flex;
+      margin: 0 auto;
+      text-align: center;
+      .sass {
+        background-color: #f1f0f5;
+        border: 1px solid #353941;
+        height: 115px;
+        width: 349px;
+        min-width: 230px;
+        margin-left: 5px;
+        padding: 2rem;
+        margin-top: 1.5rem;
+        margin-left: 5px;
+        &__name {
+          font-weight: 600;
+        }
+      }
+      .vue {
+        background-color: #f1f0f5;
+        border: 1px solid #353941;
+        height: 115px;
+        width: 349px;
+        min-width: 230px;
+        padding: 2rem;
+        margin: 24px 0 0 12px;
+        &__name {
+          font-weight: 600;
+        }
+      }
+      .bootstrap {
+        background-color: #f1f0f5;
+        border: 1px solid #353941;
+        height: 115px;
+        width: 349px;
+        min-width: 230px;
+        padding: 2rem;
+        margin: 24px 5px 24px 12px;
+        &__name {
+          font-weight: 600;
+        }
+      }
+    }
+    .end {
+      display: flex;
+      margin: 0 auto;
+      text-align: center;
+      .php {
+        background-color: #f1f0f5;
+        border: 1px solid #353941;
+        height: 115px;
+        width: 349px;
+        min-width: 230px;
+        margin-left: 5px;
+        padding: 2rem;
+        margin: 0 0 0 5px;
+        &__name {
+          font-weight: 600;
+        }
+      }
+      .android {
+        background-color: #f1f0f5;
+        border: 1px solid #353941;
+        height: 115px;
+        width: 349px;
+        min-width: 230px;
+        padding: 2rem;
+        margin: 0 0 0 12px;
+        &__name {
+          font-weight: 600;
+        }
+      }
+      .aws {
+        background-color: #f1f0f5;
+        border: 1px solid #353941;
+        height: 115px;
+        width: 349px;
+        min-width: 230px;
+        padding: 2rem;
+        margin: 0 5px 24px 12px;
+        &__name {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  // hobby画面について //
+  #hobby {
+    // min-width: 800px;
+    width: 100%;
+    padding-bottom: 30px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    .box {
+      margin-bottom: 3rem;
+      &__subtitle {
+        font-weight: 700;
+        margin: 30px 0 3px;
+        height: 3rem;
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+      }
+      &__bar {
+        height: 1.9px;
+        width: 6rem;
+        background-color: black;
+        margin: 0 auto;
+      }
+    }
+    .main {
+      width: 100%;
+      display: contents;
+      .main__box {
+        width: 320px;
+        overflow: hidden;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        position: relative;
+        &__img {
+          width: 100%;
+          height: 100%;
+        }
+        .caption {
+          height: 200px;
+          width: 250px;
+          background-color: black;
+          color: #eee;
+          position: absolute;
+          top: 0;
+          left: 10%;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          transform: translateY(100%);
+          opacity: 0;
+          transition: all 0.5s;
+          h3 {
+            margin: 5px 30px;
+            transform: translateY(60px);
+            transition: all 0.5s;
+          }
+          p {
+            margin: 0 16px;
+            transform: translateY(60px);
+            transition: all 0.5s;
+          }
+        }
+
+        &:hover > .caption {
+          opacity: 1;
+          transform: translateY(10%);
+          h3 {
+            transform: translateY(0px);
+          }
+          p {
+            transform: translateY(0px);
+          }
+        }
+      }
+    }
+  }
+  // contact画面について //
+  #contact {
+    width: 100%;
+    padding-bottom: 30px;
+    .box {
+      margin-bottom: 3rem;
+      &__subtitle {
+        font-weight: 700;
+        margin: 30px 0 3px;
+        height: 3rem;
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+      }
+      &__bar {
+        height: 1.9px;
+        width: 6rem;
+        background-color: black;
+        margin: 0 auto;
+      }
+    }
+    .text {
+      padding: 0 30px;
+      p {
+        text-align: center;
+        font-size: 1.1rem;
+        font-weight: 400;
+      }
+    }
+    .input {
+      margin-top: 30px;
+
       text-align: center;
       &__form {
         margin-top: 20px;
@@ -568,12 +1145,12 @@ button {
 
 @media screen and (max-width: 480px) {
   body {
-    width: 100%;
+    min-width: 480px;
   }
   // ヘッダー部分 //
   .parent {
     header {
-      width: 100%;
+      width: 481px;
       box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
       position: fixed;
       top: 0;
@@ -581,9 +1158,7 @@ button {
       background-color: #eee;
       z-index: 1;
       nav {
-        max-width: 72rem;
-        width: 100%;
-        padding: 0 1.2rem;
+        width: 420px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -785,6 +1360,7 @@ button {
       }
     }
     .my-sns {
+      min-width: 424px;
       margin-top: 80px;
       list-style: none;
       display: flex;
@@ -856,6 +1432,7 @@ button {
         height: 115px;
         width: 349px;
         padding: 2rem;
+        margin-left: 0px;
         &__name {
           font-weight: 600;
         }
@@ -867,6 +1444,7 @@ button {
         width: 349px;
         padding: 2rem;
         margin-top: 1.5rem;
+        margin-left: 0px;
         &__name {
           font-weight: 600;
         }
@@ -878,6 +1456,7 @@ button {
         width: 349px;
         padding: 2rem;
         margin-top: 1.5rem;
+        margin-left: 0px;
         &__name {
           font-weight: 600;
         }
@@ -896,6 +1475,7 @@ button {
         width: 349px;
         padding: 2rem;
         margin-top: 1.5rem;
+        margin-left: 0px;
         &__name {
           font-weight: 600;
         }
@@ -907,6 +1487,7 @@ button {
         width: 349px;
         padding: 2rem;
         margin-top: 1.5rem;
+        margin-left: 0px;
         &__name {
           font-weight: 600;
         }
@@ -918,6 +1499,7 @@ button {
         width: 349px;
         padding: 2rem;
         margin-top: 1.5rem;
+        margin-left: 0px;
         &__name {
           font-weight: 600;
         }
@@ -936,6 +1518,7 @@ button {
         width: 349px;
         padding: 2rem;
         margin-top: 1.5rem;
+        margin-left: 0px;
         &__name {
           font-weight: 600;
         }
@@ -947,6 +1530,7 @@ button {
         width: 349px;
         padding: 2rem;
         margin-top: 1.5rem;
+        margin-left: 0px;
         &__name {
           font-weight: 600;
         }
@@ -958,6 +1542,7 @@ button {
         width: 349px;
         padding: 2rem;
         margin-top: 1.5rem;
+        margin-left: 0px;
         &__name {
           font-weight: 600;
         }
@@ -1063,6 +1648,7 @@ button {
       }
     }
     .text {
+      width: 453px;
       padding: 0 30px;
       p {
         text-align: center;
@@ -1071,9 +1657,11 @@ button {
       }
     }
     .input {
+      width: 716px;
       margin-top: 30px;
       text-align: center;
       &__form {
+        width: 442px;
         margin-top: 20px;
         .row {
           &__parent {
@@ -1109,6 +1697,12 @@ button {
         }
       }
     }
+  }
+}
+
+@media screen and (min-width: 280px) {
+  #about {
+    height: 800px;
   }
 }
 

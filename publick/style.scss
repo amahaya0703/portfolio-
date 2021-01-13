@@ -19,7 +19,7 @@ button {
 //////////             PCサイズ画面                  //////////
 ////////////////////////////////////////////////////////////
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1440px) {
   body {
     width: 100%;
   }
@@ -302,7 +302,6 @@ button {
     }
     .top {
       display: flex;
-      margin: 0 auto;
       text-align: center;
       .html {
         background-color: #f1f0f5;
@@ -343,7 +342,6 @@ button {
     }
     .center {
       display: flex;
-      margin: 0 auto;
       text-align: center;
       .sass {
         background-color: #f1f0f5;
@@ -386,7 +384,6 @@ button {
     }
     .end {
       display: flex;
-      margin: 0 auto;
       text-align: center;
       .php {
         background-color: #f1f0f5;

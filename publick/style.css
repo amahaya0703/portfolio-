@@ -15,7 +15,7 @@ button {
   font-family: "Poppins", sans-serif;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1440px) {
   body {
     width: 100%;
   }
@@ -277,7 +277,6 @@ button {
   }
   #skills .top {
     display: flex;
-    margin: 0 auto;
     text-align: center;
   }
   #skills .top .html {
@@ -318,7 +317,6 @@ button {
   }
   #skills .center {
     display: flex;
-    margin: 0 auto;
     text-align: center;
   }
   #skills .center .sass {
@@ -361,7 +359,6 @@ button {
   }
   #skills .end {
     display: flex;
-    margin: 0 auto;
     text-align: center;
   }
   #skills .end .php {

@@ -15,13 +15,14 @@ button {
   font-family: "Poppins", sans-serif;
 }
 
-@media screen and (max-width: 1420px) {
+@media screen and (max-width: 1620px) {
   .parent {
     overflow: hidden;
   }
   .parent header {
     padding-right: 30px;
     width: 100%;
+    height: 85px;
     box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
     position: fixed;
     top: 0;
@@ -46,107 +47,71 @@ button {
   .parent header nav .logo span {
     font-weight: 300;
   }
-  .parent header nav .hamberger_menu {
-    cursor: pointer;
-    height: 4rem;
-    width: 3rem;
+  .parent header nav .menus__lists {
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-  .parent header nav .hamberger_menu .bar {
-    height: 1.5px;
-    width: 1.9rem;
-    border-radius: 2px;
-    background-color: black;
-    transition: 0.5s;
-    position: relative;
-  }
-  .parent header nav .hamberger_menu .bar:before, .parent header nav .hamberger_menu .bar:after {
-    content: "";
-    position: absolute;
-    height: inherit;
-    width: inherit;
-    background-color: black;
-    transition: 0.5s;
-  }
-  .parent header nav .hamberger_menu .bar:before {
-    transform: translateY(-9px);
-  }
-  .parent header nav .hamberger_menu .bar:after {
-    transform: translateY(9px);
-  }
-  .parent header nav .show {
-    height: 100%;
-    min-width: 182px;
-    width: 184px;
-    padding: 20px 15px;
-    position: fixed;
-    top: 64px;
-    right: 0;
-    background-color: rgba(43, 51, 59, 0.8);
-    backdrop-filter: blur(10px);
-  }
-  .parent header nav .show__lists {
     list-style: none;
+    font-size: 1.2rem;
   }
-  .parent header nav .show__lists__home, .parent header nav .show__lists__about, .parent header nav .show__lists__skills, .parent header nav .show__lists__hobby, .parent header nav .show__lists__contact {
-    width: 110px;
-    margin: 0 24px;
-    margin-bottom: 30px;
+  .parent header nav .menus__lists__list {
+    margin: 0 20px;
     padding: 10px 20px;
     position: relative;
     transition: all 0.2s;
     transition-delay: 0.2s;
   }
-  .parent header nav .show__lists__home .nav_link, .parent header nav .show__lists__about .nav_link, .parent header nav .show__lists__skills .nav_link, .parent header nav .show__lists__hobby .nav_link, .parent header nav .show__lists__contact .nav_link {
-    color: #eee;
+  .parent header nav .menus__lists__list .link {
     text-decoration: none;
-    font-size: 1.2rem;
+    color: #222831;
   }
-  .parent header nav .show__lists__home:before, .parent header nav .show__lists__about:before, .parent header nav .show__lists__skills:before, .parent header nav .show__lists__hobby:before, .parent header nav .show__lists__contact:before {
+  .parent header nav .menus__lists__list:before {
     content: "";
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 110px;
+    width: 100%;
     height: 2px;
-    background-color: #eee;
+    background-color: #222831;
     transition: all 0.2s;
   }
-  .parent header nav .show__lists__home:hover, .parent header nav .show__lists__about:hover, .parent header nav .show__lists__skills:hover, .parent header nav .show__lists__hobby:hover, .parent header nav .show__lists__contact:hover {
+  .parent header nav .menus__lists__list:hover {
     background-color: #ff3f3f;
   }
-  .parent header nav .show__lists__home:hover:before, .parent header nav .show__lists__about:hover:before, .parent header nav .show__lists__skills:hover:before, .parent header nav .show__lists__hobby:hover:before, .parent header nav .show__lists__contact:hover:before {
+  .parent header nav .menus__lists__list:hover:before {
     bottom: 40px;
     background-color: #ff3f3f;
   }
-  .parent.action .bar {
+  .parent header nav .hamberger_menu {
+    display: none;
+  }
+  .parent header nav .show {
+    display: none;
+  }
+  .action .bar {
     transform: rotate(360deg);
     background-color: transparent !important;
   }
-  .parent.action .bar:before {
+  .action .bar:before {
     transform: translateY(0) rotate(45deg) !important;
   }
-  .parent.action .bar:after {
+  .action .bar:after {
     transform: translateY(0) rotate(-45deg) !important;
   }
-  .parent.action .show {
+  .action .show {
     animation: yoko 0.5s forwards reverse;
   }
-  .parent .show {
+  .show {
     animation: modoru 0.5s forwards;
   }
-  .parent .main {
+  .main {
     box-shadow: 5px 5px 5px 5px rgba(1, 0, 0, 0.5);
   }
-  .parent .main .header {
+  .main .header {
     min-height: 100vh;
     width: 100%;
     background: url("../img/しま.jpg") top center/cover;
     position: relative;
   }
-  .parent .main .header .overlay {
+  .main .header .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -157,16 +122,16 @@ button {
     align-items: center;
     justify-content: center;
   }
-  .parent .main .header .overlay .inner {
+  .main .header .overlay .inner {
     text-align: center;
     color: #eee;
     max-width: 35rem;
   }
-  .parent .main .header .overlay .inner .name {
+  .main .header .overlay .inner .name {
     font-size: 3rem;
     margin-bottom: 10px;
   }
-  .parent .main .header .overlay .inner .btn {
+  .main .header .overlay .inner .btn {
     text-decoration: none;
     text-transform: uppercase;
     margin-top: 1rem;
@@ -177,52 +142,60 @@ button {
     color: #eee;
     cursor: pointer;
   }
-  .parent #about {
-    height: 100vh;
+  #about {
+    height: 549px;
     width: 100%;
     box-shadow: 24px 14px 13px rgba(0, 0, 0, 0.5);
   }
-  .parent #about .box__subtitle {
+  #about .box__subtitle {
     height: 3rem;
     width: 100%;
     margin: 30px 0 3px;
     text-align: center;
     font-size: 2rem;
   }
-  .parent #about .box__bar {
+  #about .box__bar {
     height: 1.9px;
     width: 6rem;
     background-color: black;
     margin: 0 auto;
   }
-  .parent #about .about-main {
+  #about .about-main {
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
     text-align: center;
   }
-  .parent #about .about-main .frame {
+  #about .about-main .frame {
     text-align: center;
   }
-  .parent #about .about-main .frame img {
+  #about .about-main .frame img {
     border-radius: 10px;
     margin-top: 27px;
+    margin-left: 200px;
   }
-  .parent #about .about-main .selfIntroduction {
+  #about .about-main .selfIntroduction {
     margin-top: 50px;
   }
-  .parent #about .about-main .selfIntroduction h3 {
+  #about .about-main .selfIntroduction h3 {
     font-size: 1.2rem;
   }
-  .parent #about .about-main .selfIntroduction .text {
+  #about .about-main .selfIntroduction .text {
+    padding-left: 200px;
+    padding-right: 200px;
+    width: 900px;
     text-align: justify;
-    margin: 20px 30px 0 30px;
+    margin: 20px 30px 0 0;
   }
-  .parent #about .my-sns {
+  #about .my-sns {
     margin-top: 80px;
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .parent #about .my-sns .sns {
+  #about .my-sns .sns {
     margin: 0 10px;
     width: 50px;
     height: 50px;
@@ -233,10 +206,10 @@ button {
     overflow: hidden;
     position: relative;
   }
-  .parent #about .my-sns .sns a {
+  #about .my-sns .sns a {
     color: #393e46;
   }
-  .parent #about .my-sns .sns::before {
+  #about .my-sns .sns::before {
     content: "";
     position: absolute;
     top: 0;
@@ -249,38 +222,38 @@ button {
     transform: translate(100%, 100%);
     transition: all 0.4s;
   }
-  .parent #about .my-sns .sns:hover::before {
+  #about .my-sns .sns:hover::before {
     transform: translate(0);
     animation: anime 0.4s linear;
   }
-  .parent #skills {
+  #skills {
     width: 100%;
     padding-bottom: 30px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   }
-  .parent #skills .box {
+  #skills .box {
     margin-bottom: 3rem;
   }
-  .parent #skills .box__subtitle {
+  #skills .box__subtitle {
     margin: 30px 0 3px;
     height: 3rem;
     width: 100%;
     text-align: center;
     font-size: 2rem;
   }
-  .parent #skills .box__bar {
+  #skills .box__bar {
     height: 1.9px;
     width: 6rem;
     background-color: black;
     margin: 0 auto;
   }
-  .parent #skills .top {
+  #skills .top {
     width: 720px;
     display: flex;
     margin: 0 auto;
     text-align: center;
   }
-  .parent #skills .top .html {
+  #skills .top .html {
     background-color: #f1f0f5;
     border: 1px solid #353941;
     height: 115px;
@@ -289,10 +262,10 @@ button {
     padding: 2rem;
     margin-left: 5px;
   }
-  .parent #skills .top .html__name {
+  #skills .top .html__name {
     font-weight: 600;
   }
-  .parent #skills .top .css {
+  #skills .top .css {
     background-color: #f1f0f5;
     border: 1px solid #353941;
     height: 115px;
@@ -301,10 +274,10 @@ button {
     padding: 2rem;
     margin-left: 12px;
   }
-  .parent #skills .top .css__name {
+  #skills .top .css__name {
     font-weight: 600;
   }
-  .parent #skills .top .js {
+  #skills .top .js {
     background-color: #f1f0f5;
     border: 1px solid #353941;
     height: 115px;
@@ -313,16 +286,16 @@ button {
     padding: 2rem;
     margin: 0 5px 0 12px;
   }
-  .parent #skills .top .js__name {
+  #skills .top .js__name {
     font-weight: 600;
   }
-  .parent #skills .center {
+  #skills .center {
     width: 720px;
     display: flex;
     margin: 0 auto;
     text-align: center;
   }
-  .parent #skills .center .sass {
+  #skills .center .sass {
     background-color: #f1f0f5;
     border: 1px solid #353941;
     height: 115px;
@@ -333,10 +306,10 @@ button {
     margin-top: 1.5rem;
     margin-left: 5px;
   }
-  .parent #skills .center .sass__name {
+  #skills .center .sass__name {
     font-weight: 600;
   }
-  .parent #skills .center .vue {
+  #skills .center .vue {
     background-color: #f1f0f5;
     border: 1px solid #353941;
     height: 115px;
@@ -345,10 +318,10 @@ button {
     padding: 2rem;
     margin: 24px 0 0 12px;
   }
-  .parent #skills .center .vue__name {
+  #skills .center .vue__name {
     font-weight: 600;
   }
-  .parent #skills .center .bootstrap {
+  #skills .center .bootstrap {
     background-color: #f1f0f5;
     border: 1px solid #353941;
     height: 115px;
@@ -357,16 +330,16 @@ button {
     padding: 2rem;
     margin: 24px 5px 24px 12px;
   }
-  .parent #skills .center .bootstrap__name {
+  #skills .center .bootstrap__name {
     font-weight: 600;
   }
-  .parent #skills .end {
+  #skills .end {
     width: 720px;
     display: flex;
     margin: 0 auto;
     text-align: center;
   }
-  .parent #skills .end .php {
+  #skills .end .php {
     background-color: #f1f0f5;
     border: 1px solid #353941;
     height: 115px;
@@ -376,10 +349,10 @@ button {
     padding: 2rem;
     margin: 0 0 0 5px;
   }
-  .parent #skills .end .php__name {
+  #skills .end .php__name {
     font-weight: 600;
   }
-  .parent #skills .end .android {
+  #skills .end .android {
     background-color: #f1f0f5;
     border: 1px solid #353941;
     height: 115px;
@@ -388,10 +361,10 @@ button {
     padding: 2rem;
     margin: 0 0 0 12px;
   }
-  .parent #skills .end .android__name {
+  #skills .end .android__name {
     font-weight: 600;
   }
-  .parent #skills .end .aws {
+  #skills .end .aws {
     background-color: #f1f0f5;
     border: 1px solid #353941;
     height: 115px;
@@ -400,18 +373,18 @@ button {
     padding: 2rem;
     margin: 0 5px 24px 12px;
   }
-  .parent #skills .end .aws__name {
+  #skills .end .aws__name {
     font-weight: 600;
   }
-  .parent #hobby {
+  #hobby {
     width: 100%;
     padding-bottom: 30px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   }
-  .parent #hobby .box {
+  #hobby .box {
     margin-bottom: 3rem;
   }
-  .parent #hobby .box__subtitle {
+  #hobby .box__subtitle {
     font-weight: 700;
     margin: 30px 0 3px;
     height: 3rem;
@@ -419,28 +392,28 @@ button {
     text-align: center;
     font-size: 2rem;
   }
-  .parent #hobby .box__bar {
+  #hobby .box__bar {
     height: 1.9px;
     width: 6rem;
     background-color: black;
     margin: 0 auto;
   }
-  .parent #hobby .main {
+  #hobby .main {
     width: 100%;
     display: contents;
   }
-  .parent #hobby .main .main__box {
+  #hobby .main .main__box {
     width: 320px;
     overflow: hidden;
     margin: 0 auto;
     margin-bottom: 20px;
     position: relative;
   }
-  .parent #hobby .main .main__box__img {
+  #hobby .main .main__box__img {
     width: 100%;
     height: 100%;
   }
-  .parent #hobby .main .main__box .caption {
+  #hobby .main .main__box .caption {
     height: 200px;
     width: 250px;
     background-color: black;
@@ -457,34 +430,34 @@ button {
     opacity: 0;
     transition: all 0.5s;
   }
-  .parent #hobby .main .main__box .caption h3 {
+  #hobby .main .main__box .caption h3 {
     margin: 5px 30px;
     transform: translateY(60px);
     transition: all 0.5s;
   }
-  .parent #hobby .main .main__box .caption p {
+  #hobby .main .main__box .caption p {
     margin: 0 16px;
     transform: translateY(60px);
     transition: all 0.5s;
   }
-  .parent #hobby .main .main__box:hover > .caption {
+  #hobby .main .main__box:hover > .caption {
     opacity: 1;
     transform: translateY(10%);
   }
-  .parent #hobby .main .main__box:hover > .caption h3 {
+  #hobby .main .main__box:hover > .caption h3 {
     transform: translateY(0px);
   }
-  .parent #hobby .main .main__box:hover > .caption p {
+  #hobby .main .main__box:hover > .caption p {
     transform: translateY(0px);
   }
-  .parent #contact {
+  #contact {
     width: 100%;
     padding-bottom: 30px;
   }
-  .parent #contact .box {
+  #contact .box {
     margin-bottom: 3rem;
   }
-  .parent #contact .box__subtitle {
+  #contact .box__subtitle {
     font-weight: 700;
     margin: 30px 0 3px;
     height: 3rem;
@@ -492,48 +465,48 @@ button {
     text-align: center;
     font-size: 2rem;
   }
-  .parent #contact .box__bar {
+  #contact .box__bar {
     height: 1.9px;
     width: 6rem;
     background-color: black;
     margin: 0 auto;
   }
-  .parent #contact .text {
+  #contact .text {
     padding: 0 30px;
   }
-  .parent #contact .text p {
+  #contact .text p {
     text-align: center;
     font-size: 1.1rem;
     font-weight: 400;
   }
-  .parent #contact .input {
+  #contact .input {
     margin-top: 30px;
     text-align: center;
   }
-  .parent #contact .input__form {
+  #contact .input__form {
     margin-top: 20px;
   }
-  .parent #contact .input__form .row__parent {
+  #contact .input__form .row__parent {
     padding: 0 20px 0 20px;
     margin-bottom: 30px;
   }
-  .parent #contact .input__form .row__parent__name {
+  #contact .input__form .row__parent__name {
     width: 100%;
     padding: 0.375rem 0.75rem;
   }
-  .parent #contact .input__form .row__parent__email {
+  #contact .input__form .row__parent__email {
     width: 100%;
     padding: 0.375rem 0.75rem;
   }
-  .parent #contact .input__form .row__parent__subject {
+  #contact .input__form .row__parent__subject {
     width: 100%;
     padding: 0.375rem 0.75rem;
   }
-  .parent #contact .input__form .row__parent__contents {
+  #contact .input__form .row__parent__contents {
     width: 100%;
     padding: 0.375rem 0.75rem;
   }
-  .parent #contact .input__form .row__parent__button {
+  #contact .input__form .row__parent__button {
     height: 43px;
     width: 110px;
     text-transform: uppercase;
@@ -545,7 +518,7 @@ button {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 998px) {
   body {
     width: 100%;
   }
@@ -579,6 +552,9 @@ button {
   .parent header nav .logo span {
     font-weight: 300;
   }
+  .parent header nav .menus {
+    display: none;
+  }
   .parent header nav .hamberger_menu {
     cursor: pointer;
     height: 4rem;
@@ -610,6 +586,8 @@ button {
     transform: translateY(9px);
   }
   .parent header nav .show {
+    display: block;
+    margin-top: 21px;
     height: 100%;
     min-width: 182px;
     width: 184px;
@@ -729,6 +707,7 @@ button {
     margin: 0 auto;
   }
   .parent #about .about-main {
+    display: block;
     text-align: center;
   }
   .parent #about .about-main .frame {
@@ -749,7 +728,7 @@ button {
     margin: 20px 30px 0 30px;
   }
   .parent #about .my-sns {
-    margin-top: 80px;
+    margin-top: 55px;
     list-style: none;
     display: flex;
     align-items: center;
@@ -1105,6 +1084,9 @@ button {
   .parent header nav .logo span {
     font-weight: 300;
   }
+  .parent header nav .menus {
+    display: none;
+  }
   .parent header nav .hamberger_menu {
     cursor: pointer;
     height: 4rem;
@@ -1136,6 +1118,8 @@ button {
     transform: translateY(9px);
   }
   .parent header nav .show {
+    display: block;
+    margin-top: 21px;
     height: 100%;
     width: 46%;
     padding: 20px 15px;
@@ -1253,6 +1237,8 @@ button {
     margin: 0 auto;
   }
   .parent #about .about-main {
+    margin-left: 0px;
+    margin-right: 0px;
     min-width: 448px;
     text-align: center;
   }
@@ -1264,7 +1250,7 @@ button {
     margin-top: 27px;
   }
   .parent #about .about-main .selfIntroduction {
-    margin-top: 50px;
+    margin-top: 35px;
   }
   .parent #about .about-main .selfIntroduction h3 {
     font-size: 1.2rem;
@@ -1275,7 +1261,7 @@ button {
   }
   .parent #about .my-sns {
     min-width: 424px;
-    margin-top: 80px;
+    margin-top: 12px;
     list-style: none;
     display: flex;
     align-items: center;

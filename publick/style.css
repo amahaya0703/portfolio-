@@ -173,6 +173,7 @@ button {
   #about .about-main .frame img {
     border-radius: 10px;
     margin-top: 27px;
+    margin-left: 200px;
   }
   #about .about-main .selfIntroduction {
     margin-top: 50px;
@@ -181,10 +182,11 @@ button {
     font-size: 1.2rem;
   }
   #about .about-main .selfIntroduction .text {
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 200px;
+    padding-right: 200px;
+    width: 900px;
     text-align: justify;
-    margin: 20px 30px 0 30px;
+    margin: 20px 30px 0 0;
   }
   #about .my-sns {
     margin-top: 80px;
@@ -516,7 +518,7 @@ button {
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 998px) {
   body {
     width: 100%;
   }
@@ -584,6 +586,8 @@ button {
     transform: translateY(9px);
   }
   .parent header nav .show {
+    display: block;
+    margin-top: 21px;
     height: 100%;
     min-width: 182px;
     width: 184px;
@@ -1114,6 +1118,8 @@ button {
     transform: translateY(9px);
   }
   .parent header nav .show {
+    display: block;
+    margin-top: 21px;
     height: 100%;
     width: 46%;
     padding: 20px 15px;

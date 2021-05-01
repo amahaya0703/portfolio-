@@ -1,0 +1,61 @@
+/*===========
+ Basic color
+===========*/
+$white: #ffffff;
+$black: #333;
+$lightblack:#4E4848;
+$lightgray:#dfdfdf;
+$Dgray:#4E4848;
+$gray: #BCBBB6;
+$btn-gray:#B1B1B1;
+$red : #b01717;
+$orange: #FF9300;
+$beige: #ffeddc;
+$yellow: #E5D02F;
+$hover_yellow:#ffe108cf;
+$blue: #00B6EB;
+$Dblue:#028bb2;
+
+$blog-author: #fff;
+$bc-lightgray: #fafafa;
+$bc-lightorange: #fffcf7;
+/*===========
+ main color for this site.
+===========*/
+
+$color__background-body: $black;
+$color__background-screen: #f1f1f1;
+$color__background-hr: #ccc;
+$color__background-button: #f6f6f6;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+
+$color__text-screen: #21759b;
+$color__text-input: #666;
+$color__text-input-focus: #111;
+$color__link: $black;
+$color__link-visited: $black;
+$color__link-hover: $black;
+$color__text-main: $black;
+
+$color__border-button: #ccc #ccc #bbb;
+$color__border-button-hover: #ccc #bbb #aaa;
+$color__border-button-focus: #aaa #bbb #bbb;
+$color__border-input: #ccc;
+$color__border-abbr: #666;
+
+.marker1,
+.marker2,
+.marker3 {
+	color: $black !important;
+	font-weight: bold; 
+}
+.marker1 { //青
+	background: linear-gradient(transparent 70%, #c1e0ff 85%);
+}
+.marker2 { //緑
+	background: linear-gradient(transparent 70%, #c1ffc9 85%);
+}
+.marker3 { //緑
+	background: linear-gradient(transparent 70%, #ffc1c1 85%);
+}

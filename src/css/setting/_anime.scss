@@ -1,0 +1,31 @@
+
+//about画面のアニメーション
+@keyframes anime {
+	0%,
+	100% {
+		height: 100%;
+		width: 100%;
+	}
+	50% {
+		height: 50%;
+		width: 50%;
+	}
+}
+
+@keyframes yoko {
+	0% {
+		transform: translate(0);
+	}
+	100% {
+		transform: translateX(100vh);
+	}
+}
+
+@keyframes modoru {
+	100% {
+		transform: translateX(100vh);
+	}
+	0% {
+		transform: translate(0);
+	}
+}
